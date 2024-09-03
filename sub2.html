@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./resources/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="login" id="login">
+    <input type="checkbox" name="join" id="join">
+    <input type="checkbox" name="bar" id="bar">
+    <header class="w-100 pof t l shadow pt-4">
+        <div class="container por">
+            <div class="row">
+                <div class="col-2">
+                    <a href="./index.html" class="logo img logo-header"></a>
+                </div>
+                <div class="col-5 ps-5 df ja pt-3 px-0">
+                    <a href="./sub.html">투어경북</a>
+                    <a href="#">숙박</a>
+                    <a href="#">문화유산</a>
+                    <a href="#">체험예약/안내</a>
+                    <div class="hover1 poa shadow">
+                        <a href="#">호텔</a>
+                        <a href="#">펜션</a>
+                        <a href="#">게스트하우스</a>
+                    </div>
+                    <div class="hover2 poa shadow">
+                        <a href="#">세계문화유산</a>
+                        <a href="#">경주의역사</a>
+                        <a href="#">분류별유산</a>
+                    </div>
+                    <div class="hover3 poa shadow">
+                        <a href="#">체험예약</a>
+                        <a href="./sub2.html">관광안내</a>
+                        <a href="#">주변관광지</a>
+                        <a href="#">문화재투어</a>
+                    </div>
+                </div>
+                <div class="col-5 df jb pt-3">
+                    <div class="df mx-5">
+                        <input type="text" id="seach" name="seach" style="width: 150px;">
+                        <i class="fas fa-magnifying-glass tit mt-2"></i>
+                    </div>
+                    <label for="login" class="ms-4">로그인</label>
+                    <label for="join" class="mx-3">회원가입</label>
+                    <label for="bar" class="fas fa-bars tit mt-1 dn"></label>
+                    <label for="bar" class="fas fa-x tit mt-1 dn"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bar shadow">
+        <a href="./sub.html">투어경북</a>
+        <a href="#" class="mt-4">숙박</a>
+        <div class="hover1">
+            <a href="#">호텔</a>
+            <a href="#">펜션</a>
+            <a href="#">게스트하우스</a>
+        </div>
+        <a href="#" class="mt-4">문화유산</a>
+        <div class="hover2">
+            <a href="#">세계문화유산</a>
+            <a href="#">경주의역사</a>
+            <a href="#">분류별유산</a>
+        </div>
+        <a href="#" class="mt-4">체험예약/안내</a>
+        <div class="hover3">
+            <a href="#">체험예약</a>
+            <a href="./sub2.html">관광안내</a>
+            <a href="#">주변관광지</a>
+            <a href="#">문화재투어</a>
+        </div>
+    </div>
+    <div class="modal login-modal">
+        <div class="modal-content">
+            <p class="tit">로그인</p>
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="login-password" id="login-password">
+            <div class="poa">
+                <label for="login" class="button2 btn2 mx-3">종료</label>
+                <label for="login" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal join-modal">
+        <div class="modal-content">
+            <p class="tit">회원가입</p>
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-name" id="join-name">
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="join-password" id="join-password">
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-names" id="join-names">
+            <p class="mt-4">전화번호</p>
+            <input type="text" name="join-number" id="join-number">
+            <div class="poa">
+                <label for="join" class="button2 btn2 mx-3">종료</label>
+                <label for="join" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <section class="vi">
+        <div class="container">
+            <div class="row">
+                <div class="mini img por">
+                    <p class="poa tit" style="bottom: 10px; left: 20px;">투어경북</p>
+                    <div class="line w-100 b l"></div>
+                    <div class="back w-100 h-100 t l"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub2-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">HOTPLACE</h1>
+                    <h2>핫플레이스</h2>
+                </div>
+                <div class="col-12 list mt-5 shadow df ja"></div>
+                <div class="col-12 mt-5 jb df">
+                    <div class="box box1 shadow p-4">
+                        <p class="tit">핫플등록</p>
+                        <p class="my-4 tit place-tit" style="height: 40px;"></p>
+                        <p class="mt-3 mi">핫플명</p>
+                        <input type="text" name="title" id="sub2-title" class="w-100">
+                        <p class="mt-5 mi">내용</p>
+                        <input type="text" name="content" id="sub2-content" class="w-100">
+                        <p class="my-5 mb-4">spot등록</p>
+                        <img src="./resources/B/spot.png" alt="spot" title="spot" class="spot">
+                    </div>
+                    <div class="box box2 shadow por ov">
+                        <p class="tit m-4 poa">뷰어편집</p>
+                        <div class="w-100 h-100 por view-port">
+                            <div class="view w-100 h-100 por">
+                                <div class="view-box poa">
+                                    <div class="position top" position='top'></div>
+                                    <div class="position left" position='left'></div>
+                                    <div class="position front" position='front'></div>
+                                    <div class="position right" position="right"></div>
+                                    <div class="position back" position="back"></div>
+                                    <div class="position bottom" position="bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box3 shadow">
+                        <p class="tit m-4">핫플목록</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub2-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">KEYWORD</h1>
+                    <h2>키워드 분석</h2>
+                </div>
+                <div class="col-6 mt-5 por">
+                    <canvas id="wordcloud" class="mt-1" width="600" height="600"></canvas>
+                </div>
+                <div class="col-6 mt-5">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>키워드</td>
+                                <td>빈도수</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="keywords">
+                        <table class="table">
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-2 mt-5"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sub2-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">CHART</h1>
+                    <h2>차트</h2>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="w-100 jc df">
+                        <div class="y por">
+                            <p class="poa t text-center w-100"></p>
+                        </div>
+                        <div class="chart ja px-2 df ja">
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                            <div>
+                                <div class="hover"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="x">
+                        <div class="pos px-2 w-100 df jb">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 df jc">
+                    <button class="prev mx-3 button2 btn2" style="width: 50px;"><</button>
+                    <p class="tit page mt-1">chart</p>
+                    <button class="next mx-3 button2 btn2" style="width: 50px;">></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 por">
+        <div class="line w-100 t l"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <a href="#" class="fab fa-facebook fff tit"></a>
+                    <a href="#" class="fab fa-youtube fff mx-3 tit"></a>
+                    <a href="#" class="fab fa-twitter fff tit"></a>
+                </div>
+                <div class="col-6 pt-5">
+                    <a href="./index.html" class="logo logo-footer img mt-2"></a>
+                    <p class="fff mt-2">Copyright ⓒ 2020 Gyeongsangbuk-do all rights reserved.</p>
+                </div>
+                <div class="col-6 pt-5">
+                    <p class="mt-2 fff text-end">
+                        경상북도 안동시 풍천면 도청대로 455 관광문의(경상북도관광홍보관) : 054-745-0753 <br>
+                        e-mail : gbnadri@gmail.com 홈페이지문의(경상북도관광공사) : 070-4820-6437 <br>
+                        관광자료신청 : 054-678-5430 <br>
+                        경북투어문의 : 054-678-5432
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./resources/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="./resources/jq/jquery-3.7.0.js"></script>
+    <script src="./resources/js/map.js"></script>
+    <script src="./resources/js/keyword.js"></script>
+</body>
+</html>
