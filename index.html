@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./resources/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="login" id="login">
+    <input type="checkbox" name="join" id="join">
+    <input type="checkbox" name="bar" id="bar">
+    <header class="w-100 pof t l shadow pt-4">
+        <div class="container por">
+            <div class="row">
+                <div class="col-2">
+                    <a href="./index.html" class="logo img logo-header"></a>
+                </div>
+                <div class="col-5 ps-5 df ja pt-3 px-0">
+                    <a href="./sub.html">투어경북</a>
+                    <a href="#">숙박</a>
+                    <a href="#">문화유산</a>
+                    <a href="#">체험예약/안내</a>
+                    <div class="hover1 poa shadow">
+                        <a href="#">호텔</a>
+                        <a href="#">펜션</a>
+                        <a href="#">게스트하우스</a>
+                    </div>
+                    <div class="hover2 poa shadow">
+                        <a href="#">세계문화유산</a>
+                        <a href="#">경주의역사</a>
+                        <a href="#">분류별유산</a>
+                    </div>
+                    <div class="hover3 poa shadow">
+                        <a href="#">체험예약</a>
+                        <a href="./sub2.html">관광안내</a>
+                        <a href="#">주변관광지</a>
+                        <a href="#">문화재투어</a>
+                    </div>
+                </div>
+                <div class="col-5 df jb pt-3">
+                    <div class="df mx-5">
+                        <input type="text" id="seach" name="seach" style="width: 150px;">
+                        <i class="fas fa-magnifying-glass tit mt-2"></i>
+                    </div>
+                    <label for="login" class="ms-4">로그인</label>
+                    <label for="join" class="mx-3">회원가입</label>
+                    <label for="bar" class="fas fa-bars tit mt-1 dn"></label>
+                    <label for="bar" class="fas fa-x tit mt-1 dn"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bar shadow">
+        <a href="./sub.html">투어경북</a>
+        <a href="#" class="mt-4">숙박</a>
+        <div class="hover1">
+            <a href="#">호텔</a>
+            <a href="#">펜션</a>
+            <a href="#">게스트하우스</a>
+        </div>
+        <a href="#" class="mt-4">문화유산</a>
+        <div class="hover2">
+            <a href="#">세계문화유산</a>
+            <a href="#">경주의역사</a>
+            <a href="#">분류별유산</a>
+        </div>
+        <a href="#" class="mt-4">체험예약/안내</a>
+        <div class="hover3">
+            <a href="#">체험예약</a>
+            <a href="./sub2.html">관광안내</a>
+            <a href="#">주변관광지</a>
+            <a href="#">문화재투어</a>
+        </div>
+    </div>
+    <div class="modal login-modal">
+        <div class="modal-content">
+            <p class="tit">로그인</p>
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="login-password" id="login-password">
+            <div class="poa">
+                <label for="login" class="button2 btn2 mx-3">종료</label>
+                <label for="login" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal join-modal">
+        <div class="modal-content">
+            <p class="tit">회원가입</p>
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-name" id="join-name">
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="join-password" id="join-password">
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-names" id="join-names">
+            <p class="mt-4">전화번호</p>
+            <input type="text" name="join-number" id="join-number">
+            <div class="poa">
+                <label for="join" class="button2 btn2 mx-3">종료</label>
+                <label for="join" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <section class="vi">
+        <div class="container">
+            <div class="row">
+                <div class="box box1">
+                    <div class="df">
+                        <div class="tri tri1"></div>
+                        <div class="tri tri2"></div>
+                    </div>
+                    <div class="df">
+                        <div class="tri tri3"></div>
+                        <div class="tri tri4"></div>
+                    </div>
+                </div>
+                <input type="checkbox" name="slider" id="slider">
+                <div class="box box2 ps-5 pt-5">
+                    <h1 class="fff">GRAND <br> 
+                        CULTURE 
+                        TOUR
+                    </h1>
+                    <p class="tit fff">경북그랜드문화투어에 오신것을 <br>
+                        진심으로 환영합니다!
+                    </p>
+                    <div class="text" style="height: 50px;">
+                        <p class="fff poa">역사와 미래! <br> 세계와 하나되는 문화관광 경북!</p>
+                        <p class="fff poa">생명이 움트는 경북! <br> 태백산맥을 따라 모두 비경!</p>
+                        <p class="fff poa">유네스코가 지정한 경북! <br> 세계문화유산의 도시!</p>
+                        <p class="fff poa">푸른바다와 일출! <br> 계절마다 새로운 동해!</p>
+                    </div>
+                    <div class="df mt-5">
+                        <label for="slider" class="fas mt-1 fa-play fff"></label>
+                        <label for="slider" class="fas mt-1 fa-pause fff"></label>
+                        <button class="button1 btn1 mx-4">Learn More</button>
+                    </div>
+                    <div class="ball r"></div>
+                    <div class="line h-100 t r"></div>
+                </div>
+                <div class="box box3">
+                    <div class="cross poa"></div>
+                    <div class="slider poa df">
+                        <div class="slide img w-100 h-100"></div>
+                        <div class="slide img w-100 h-100"></div>
+                        <div class="slide img w-100 h-100"></div>
+                        <div class="slide img w-100 h-100"></div>
+                        <div class="slide img w-100 h-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <input type="checkbox" name="con1" id="con1-1">
+    <input type="checkbox" name="con1" id="con1-2">
+    <input type="checkbox" name="con1" id="con1-3">
+    <input type="checkbox" name="con1" id="con1-4">
+    <input type="checkbox" name="con1" id="con1-5">
+    <section class="con1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">BEST5</h1>
+                    <h2>경북Best5</h2>
+                </div>
+                <div class="col-12 mt-5 df jb">
+                    <div class="block p-4 img">
+                        <label for="con1-1" class="line w-100"></label>
+                        <label for="con1-1" class="fff">1. 대릉원 <br>
+                        경주 대릉원은 경주시 노동동과 황남동에 있는 신라 시대의 고분군을 말하며 노동동 고분군, 노서리 고분군, 황남동 고분군, 황오동 고분군, 인왕동 고분군으로 구성되어 있다. </label>
+                    </div>
+                    <div class="block p-4 img">
+                        <label for="con1-2" class="line w-100"></label>
+                        <label for="con1-2" class="fff">2. 도산서원 <br> 
+경주 대릉원은 경주시 노동동과 황남동에 있는 신라 시대의 고분군을 말하며 노동동 고분군, 노서리 고분군, 황남동 고분군, 황오동 고분군, 인왕동 고분군으로 구성되어 있다. </label>
+                    </div>
+                    <div class="block p-4 img">
+                        <label for="con1-3" class="line w-100"></label>
+                        <label for="con1-3" class="fff">3. 울릉도 <br>
+                            우리나라에서 9번째 큰 섬인 울릉도는 화산활동에 의해 만들어진 대표적인 섬으로 본섬을 비롯한 유인도인 독도와 죽도 그리고 과거에는 주민이 살았으나 현재는 무인도인 관음도가 있고, 섬의 주변에는 삼선암, 딴 바위, 공암(코끼리바위), 북저바위 등의 크고 작은 암도를 포함한 44개의 부속도서로 이루어져 있다.</label>
+                    </div>
+                    <div class="block p-4 img">
+                        <label for="con1-4" class="line w-100"></label>
+                        <label for="con1-4" class="fff">4. 하회마을 <br>
+                            하회마을은 풍산 류(柳)씨가 대대로 살아오던 전형적인 집성촌으로 한국 전통가옥의 미(美)가 살아 숨 쉬는 마을이다. 
+                            조선시대의 대유학자 겸암 류운룡 선생과 서애 류성룡선생이 태어난 곳이기도 한 안동 하회마을은 1999년 4월 21일에는 방한 3일째였던 영국 엘리자베스 2세 여왕이 한국 전통의 고장으로서 방문하여 더욱 유명해졌다.</label>
+                    </div>
+                    <div class="block p-4 img">
+                        <label for="con1-5" class="line w-100"></label>
+                        <label for="con1-5" class="fff">5. 호미곳 <br>
+                            호미곶은 한반도의 최동단에 위치, 한반도 지형상 호랑이 꼬리에 해당하는 곳이다. 고산자 김정호는 대동여지도를 만들면서 이곳을 일곱 번이나 답사 측정한 뒤 우리나라의 가장 동쪽임을 확인하였다고 한다. </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal con1-1">
+        <div class="modal-content img p-5">
+            <div class="line w-100 line1"></div>
+            <div class="line w-100 line2"></div>
+            <p class="fff">
+                <span class="mi">1. 대릉원 </span> <br>
+경주 대릉원은 경주시 노동동과 황남동에 있는 신라 시대의 고분군을 말하며 노동동 고분군, 노서리 고분군, 황남동 고분군, 황오동 고분군, 인왕동 고분군으로 구성되어 있다. 
+            </p>
+            <label for="con1-1" class="poa button2 btn2">닫기</label>
+        </div>
+    </div>
+    <div class="modal con1-2">
+        <div class="modal-content img">
+            <div class="line w-100 line1"></div>
+            <div class="line w-100 line2"></div>
+            <p class="fff">
+                <span class="mi">2. 도산서원</span><br>
+                도산서원은 건축물 구성면으로 볼 때 크게 도산서당과 이를 아우르는 도산서원으로 구분된다. 도산서당은 퇴계선생이 몸소 거처하면서 제자들을 가르치던 곳이고, 도산서원은 퇴계선생 사후 건립되어 추증된 사당과 서원이다. 
+            </p>
+            <label for="con1-2" class="poa button2 btn2">닫기</label>
+        </div>
+    </div>
+    <div class="modal con1-3">
+        <div class="modal-content img">
+            <div class="line w-100 line1"></div>
+            <div class="line w-100 line2"></div>
+            <p class="fff">
+                <span class="mi">3. 울릉도</span><br>
+                도산서원은 건축물 구성면으로 볼 때 크게 도산서당과 이를 아우르는 도산서원으로 구분된다. 도산서당은 퇴계선생이 몸소 거처하면서 제자들을 가르치던 곳이고, 도산서원은 퇴계선생 사후 건립되어 추증된 사당과 서원이다. 
+            </p>
+            <label for="con1-3" class="poa button2 btn2">닫기</label>
+        </div>
+    </div>
+    <div class="modal con1-4">
+        <div class="modal-content img">
+            <div class="line w-100 line1"></div>
+            <div class="line w-100 line2"></div>
+            <p class="fff">
+                <span class="mi">4. 하회마을</span><br>
+                    하회마을은 풍산 류(柳)씨가 대대로 살아오던 전형적인 집성촌으로 한국 전통가옥의 미(美)가 살아 숨 쉬는 마을이다. 
+                    조선시대의 대유학자 겸암 류운룡 선생과 서애 류성룡선생이 태어난 곳이기도 한 안동 하회마을은 1999년 4월 21일에는 방한 3일째였던 영국 엘리자베스 2세 여왕이 한국 전통의 고장으로서 방문하여 더욱 유명해졌다.
+            </p>
+            <label for="con1-4" class="poa button2 btn2">닫기</label>
+        </div>
+    </div>
+    <div class="modal con1-5">
+        <div class="modal-content img">
+            <div class="line w-100 line1"></div>
+            <div class="line w-100 line2"></div>
+            <p class="fff">
+                <span class="mi">5. 호미곳</span> <br>
+                호미곶은 한반도의 최동단에 위치, 한반도 지형상 호랑이 꼬리에 해당하는 곳이다. 고산자 김정호는 대동여지도를 만들면서 이곳을 일곱 번이나 답사 측정한 뒤 우리나라의 가장 동쪽임을 확인하였다고 한다. 
+            </p>
+            <label for="con1-5" class="poa button2 btn2">닫기</label>
+        </div>
+    </div>
+    <section class="con2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">TOUR GUIDE</h1>
+                    <h2>경북투어가이드</h2>
+                </div>
+                <div class="col-12 mt-5 df">
+                    <div class="box box1">
+                        <div class="dg poa"></div>
+                        <div class="dg por">
+                            <div class="block poa"></div>
+                            <div class="block por">
+                                <div class="img img1"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img2"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img3"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img4"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block poa"></div>
+                        </div>
+                        <div class="dg por">
+                            <div class="block poa"></div>
+                            <div class="block por">
+                                <div class="img img5"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img6"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img7"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block poa"></div>
+                        </div>
+                        <div class="dg por">
+                            <div class="block poa"></div>
+                            <div class="block por">
+                                <div class="img img8"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img9"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block por">
+                                <div class="img img10"></div>
+                                <div class="back fff p-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                                </div>
+                            </div>
+                            <div class="block poa"></div>
+                        </div>
+                    </div>
+                    <div class="box box2 p-5">
+                        <p class="fff">
+                            <span class="mi">Lorem ipsum dolor sit amet,</span> <br>
+                            consectetur adipiscing elit. Donec aliquam metus vitae urna finibus, et dapibus risus maximus. Duis nec posuere urna
+                        </p>
+                        <div class="line w-100 l b"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">INFORMATION OF THE MONTH</h1>
+                    <h2>이달의 공연·전시 안내</h2>
+                </div>
+                <div class="col-12 mt-5 df jb">
+                    <div class="box box1 p-5">
+                        <p class="tit fff w-100 mb-5">이달의 공연 및 전시 안내</p>
+                        <div class="df flex-wrap">
+                            <p>하회별신굿탈놀이 <br>
+                                안동시 <br>
+                                2024. 08. 06</p>
+                            <p>
+                                호미곶한민족해맞이축전 <br>
+                                포항시 <br>
+                                2024. 08. 07
+                            </p>
+                            <p>
+                                문경찻사발축제 <br>
+                                문경시 <br>
+                                2024. 08. 10
+                            </p>
+                            <p>
+                                청도 프로방스 빛축제 <br>
+                                청도군 <br>
+                                2024. 08. 17
+                            </p>
+                            <p>
+                                영덕대게축제 <br>
+                                영덕군 <br>
+                                2024. 08. 18
+                            </p>
+                            <p>
+                                고령대가야축제 <br>
+                                고령군 <br> 
+                                2024. 08. 21
+                            </p>
+                            <p>
+                                마켓피어나인 <br>
+                                포항시 <br>
+                                2024. 08. 22
+                            </p>
+                            <p>
+                                가산산성 문화유산 야행 <br>
+                                칠곡군 <br>
+                                2024. 08.23
+                            </p>
+                        </div>
+                        <div class="text-line poa"></div>
+                        <div class="line h-100 r t"></div>
+                    </div>
+                    <div class="box box2 p-4">
+                        <div class="dg">
+                            <p>SUN</p>
+                            <p>MON</p>
+                            <p>THE</p>
+                            <p>WEN</p>
+                            <p>TUE</p>
+                            <p>FRI</p>
+                            <p>SET</p>
+                        </div>
+                        <div class="dg">
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>01</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>02</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>03</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>04</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>05</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>06</p>
+                                <p class="sm">하회별신굿탈놀이</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>07</p>
+                                <p class="sm">호미곶한민족해맞이축전</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>08</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>09</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>10</p>
+                                <p class="sm">문경찻사발축제</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>11</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>12</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>13</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>14</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>15</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>16</p>
+                            </div>
+                            <div class="date event img img1">
+                                <div class="date-line"></div>
+                                <p>17</p>
+                                <p class="sm">청도 프로방스 빛축제</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>18</p>
+                                <p class="sm">영덕대게축제</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>19</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>20</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>21</p>
+                                <p class="sm">고령대가야축제</p>
+                            </div>
+                            <div class="date event">
+                                <div class="date-line"></div>
+                                <p>22</p>
+                                <p class="sm">마켓피어나인</p>
+                            </div>
+                            <div class="date event img img2">
+                                <div class="date-line"></div>
+                                <p>23</p>
+                                <p class="sm">가산산성 문화유산 야행</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>24</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>25</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>26</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>27</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>28</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>29</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>30</p>
+                            </div>
+                            <div class="date">
+                                <div class="date-line"></div>
+                                <p>31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">GALLERY</h1>
+                    <h2>경북관광갤러리</h2>
+                </div>
+                <div class="col-12 mt-5 df">
+                    <div class="dg box1 box">
+                        <div class="view ps-5 pt-5">
+                            <h1 class="fff">GALLERY</h1>
+                            <i class="fas fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="cube">
+                            <div class="img front"></div>
+                            <div class="img right"></div>
+                            <div class="img back"></div>
+                            <div class="left">
+                                <p class="fff p-4 mi"><span class="mi">1. 스페이스워크</span> <br>
+                                    “시간과 공간의 마법에 걸리다” “Space Walk”는 우주선을 벗어나 우주를 유영하는, 혹은 공간을 걷는 이라는 이중적 의미를 지닌다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cube">
+                            <div class="img front"></div>
+                            <div class="img right"></div>
+                            <div class="img back"></div>
+                            <div class="left">
+                                <p class="fff p-4 mi"><span class="mi">2. 은어다리</span> <br>
+                                    울진 여행 코스 중 야경 명소로 유명한 아름다운 교각으로 꼽힌다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cube">
+                            <div class="img front"></div>
+                            <div class="img right"></div>
+                            <div class="img back"></div>
+                            <div class="left">
+                                <p class="fff p-4 mi"><span class="mi">3. 연화지</span> <br>
+                                    김천 연화지는 맑은 연못과 수많은 벚꽃이 어우러져  많은 사람에게 특별히 더 사랑을 받고 있는 곳이다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="ball" id="ball">
+                    <div class="dg box2 box por">
+                        <label for="ball" class="ball">
+                            <i class="fas fa-x"></i>
+                        </label>
+                        <div class="img img1"></div>
+                        <div class="img img2"></div>
+                        <div class="img img3"></div>
+                        <div class="img img4"></div>
+                        <div class="img img5"></div>
+                        <div class="img img6"></div>
+                        <div class="img img7"></div>
+                        <div class="img img8"></div>
+                        <div class="img img9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">CULTURE·FESTIVAL</h1>
+                    <h2>문화·축제</h2>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="trans">
+                        <div class="block">
+                            <div class="img img1">
+                                <div class="tri tri1"></div>
+                                <div class="tri tri4"></div>
+                                <div class="tri tri4"></div>
+                                </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img2">
+                                <div class="tri tri1"></div>
+                                <div class="tri tri4"></div>
+                                <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img3">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img4">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img5">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img6">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img7">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img8">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img9">
+                                <div class="tri tri1"></div>
+                            <div class="tri tri4"></div>
+                            <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="img img10">
+                                <div class="tri tri1"></div>
+                                <div class="tri tri4"></div>
+                                <div class="tri tri4"></div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 por">
+        <div class="line w-100 t l"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <a href="#" class="fab fa-facebook fff tit"></a>
+                    <a href="#" class="fab fa-youtube fff mx-3 tit"></a>
+                    <a href="#" class="fab fa-twitter fff tit"></a>
+                </div>
+                <div class="col-6 pt-5">
+                    <a href="./index.html" class="logo logo-footer img mt-2"></a>
+                    <p class="fff mt-2">Copyright ⓒ 2020 Gyeongsangbuk-do all rights reserved.</p>
+                </div>
+                <div class="col-6 pt-5">
+                    <p class="mt-2 fff text-end">
+                        경상북도 안동시 풍천면 도청대로 455 관광문의(경상북도관광홍보관) : 054-745-0753 <br>
+                        e-mail : gbnadri@gmail.com 홈페이지문의(경상북도관광공사) : 070-4820-6437 <br>
+                        관광자료신청 : 054-678-5430 <br>
+                        경북투어문의 : 054-678-5432
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
