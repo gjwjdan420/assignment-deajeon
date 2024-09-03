@@ -1,0 +1,1599 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, label, button {
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    color: #4f4f4f;
+}
+
+h1 {
+    font-size: 42px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0086ff;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0086ff;
+}
+
+.tit {
+    font-size: 18px;
+}
+
+.mi {
+    font-size: 16px;
+}
+
+.sm {
+    font-size: 12px;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal { 
+    display: block;
+    top: -100%;
+}
+
+.modal .modal-content {
+    border-radius: 40px;
+    margin: 50px auto;
+    transform: scale(0);
+}
+
+.tri {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.logo {
+    width: 160px;
+    height: 62px;
+    display: block;
+}
+
+.row > * {
+    padding: 0;
+}
+
+.logo-header {
+    background-image: url(../my/logo-header.png);
+}
+
+.logo-footer {
+    background-image: url(../my/logo-footer.png);
+}
+
+.tri1 {clip-path: polygon(0 0, 100% 0, 100% 100%);}
+.tri2 {clip-path: polygon(0 0, 100% 100%, 0 100%);}
+.tri3 {clip-path: polygon(0 100%, 100% 0, 0 0);}
+.tri4 {clip-path: polygon(0 100%, 100% 100%, 100% 0);}
+
+.por {position: relative;}
+.poa {position: absolute;}
+.pof {position: fixed;}
+ 
+.ov {overflow: hidden;}
+
+.df {display: flex;}
+.db {display: block;}
+.dn {display: none;}
+
+.ja {justify-content: space-around;}
+.jb {justify-content: space-between;}
+.je {justify-content: end;}
+.jc {justify-content: center;}
+
+section {
+    margin: 120px 0;
+}
+
+.t {top: 0;}
+.l {left: 0;}
+.r {right: 0;}
+.b {bottom: 0;}
+
+.line {
+    position: absolute;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+}
+
+img {
+    z-index: 10;
+    position: relative;
+}
+
+.fff {
+    color: #fff;
+}
+
+/* 헤더 */
+
+header {
+    z-index: 100;
+    background-color: #fff;
+    height: 120px;
+}
+
+header .col-5 a::after, .bar a::after {
+    width: 15px;
+    height: 15px;
+    background-color: #ff9c1a;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    left: -2px;
+    z-index: -1;
+    clip-path: polygon(0 100%, 0 100%, 100% 0,0 0);
+    content: "";
+}
+
+header a:hover::after {
+    width: 100%;
+    height: 25px;
+    clip-path: polygon(0 100%, 80% 100%, 100% 0,0 0);
+}
+
+.bar a:hover::after {
+    width: 100%;
+    height: 40px;
+    clip-path: polygon(0 100%, 80% 100%, 100% 0,0 0);
+}
+
+header .hv::after{
+    width: 100% !important;
+    height: 25px !important;
+    background-color: #d7e9ff !important;
+    clip-path: polygon(0 100%, 80% 100%, 100% 0,0 0) !important;
+}
+
+.bar .hv::after {
+    width: 100% !important;
+    height:40px !important;
+    background-color: #d7e9ff !important;
+    clip-path: polygon(0 100%, 80% 100%, 100% 0,0 0) !important;
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input[type=text], input[type=password] {
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid #4f4f4f;
+} 
+
+#bar:not(:checked) ~ header .col-5 .fa-bars,
+#bar:checked ~ header .col-5 .fa-x {
+    display: block;
+}
+
+.button1 {
+    font-size: 14px;
+    width: 110px;
+    height: 35px;
+    border-top-right-radius: 25px;
+}
+
+.button2 {
+    font-size: 14px;
+    width: 110px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.btn1 {
+    color: #0086ff;
+    background-color: #d7e9ff;
+}
+
+.btn2 {
+    color: #fff;
+    background-color: #0068ff;
+}
+
+#login:checked ~ .login-modal,
+#join:checked ~ .join-modal {
+    top: 0;
+}
+
+input[type=text], input[type=password] {
+    width: 70%;
+}
+
+.modal .tit {
+    color: #00a4ff;
+}
+
+.login-modal .modal-content {
+    padding: 40px;
+    width: 550px;
+    height: 450px;
+}
+
+header .poa {
+    background-color: #fff;
+    width: 130px;
+    height: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    top: 95px;
+    border-radius: 0 0 25px 25px;
+}
+
+header .col-5 > a:nth-child(2),
+header .col-5 > a:nth-child(3),
+header .col-5 > a:nth-child(4) {
+    height: 82px;
+}
+
+.col-5 > a:nth-child(2):hover ~ .hover1,
+.hover1:hover {
+    height: 135px;
+}
+
+.col-5 > a:nth-child(3):hover ~ .hover2,
+.hover2:hover {
+    height: 135px;
+}
+
+.col-5 > a:nth-child(4):hover ~ .hover3,
+.hover3:hover {
+    height: 170px;
+}
+
+.hover1 {
+    left: 375px;
+}
+
+.hover2 {
+    left: 480px;
+}
+
+.hover3 {
+    left: 622px;
+}
+
+header .poa a {
+    margin: 15px 0;
+    width: 120px;
+    display: block;
+}
+
+.join-modal .modal-content {
+    padding: 40px;
+    width: 550px;
+    height: 700px;
+}
+
+#login:checked ~ .login-modal .modal-content,
+#join:checked ~ .join-modal .modal-content {
+    transform: scale(1);
+}
+
+/* 비주얼 */
+.vi {
+    margin-top: 170px;
+}
+
+.vi .box2 h1 {
+    font-size: 70px;
+    z-index: 10;
+    position: relative;
+}
+
+.vi .box {
+    height: 600px;
+    position: relative;
+}
+
+.vi .box1 {
+    width: 300px;
+}
+
+.vi .box1 .df {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.vi .tri1 {background-color: #ff9c1a;}
+.vi .tri2 {background-color: #ff6700;}
+.vi .tri3 {background-color: #c0cbff;}
+.vi .tri4 {background-color: #d7e9ff;}
+
+.vi .box2 {
+    width: 450px;
+    background-color: #0086ff;
+}
+
+.vi .box2 .text p:nth-child(1) {
+    animation: infinite slider1 18s;
+}
+
+.vi .box2 .text p:nth-child(2) {
+    animation: infinite slider2 18s;
+}
+
+.vi .box2 .text p:nth-child(3) {
+    animation: infinite slider3 18s;
+}
+
+.vi .box2 .text p:nth-child(4) {
+    animation: infinite slider4 18s;
+}
+
+.vi .box2 .line {
+    width: 150px;
+    height: 100%;
+    background-color: #00a4ff;
+}
+
+.vi .ball {
+    width: 300px;
+    height: 300px;
+    top: 25%;
+    background-color: #0068ff;
+}
+
+.slider {
+    width: 500%;
+    animation: 18s infinite slider;
+    height: 100%;
+}
+
+.vi .slider .img:nth-child(1), .vi .slider .img:nth-child(5) {background-image: url(../A/비주얼이미지/images\ \(1\).jpg);}
+.vi .slider .img:nth-child(2) {background-image: url(../A/비주얼이미지/images\ \(2\).jpg);}
+.vi .slider .img:nth-child(3) {background-image: url(../A/비주얼이미지/images\ \(3\).jpg);}
+.vi .slider .img:nth-child(4) {background-image: url(../A/비주얼이미지/images\ \(4\).jpg);}
+
+.vi .box2 .df label {
+    font-size: 29px;
+    display: none;
+}
+
+.cross {
+    width: 30%;
+    height: 100%;
+    left: 0;
+    animation: 18s infinite cross;
+    z-index: 10;
+    background-color: #0068ff69;
+    transform: skew(-30deg);
+}
+
+@keyframes cross {
+    0% {left: -100%;}
+    15% {left: -100%;}
+    25% {left: 100%;}
+    40% {left: 100%;}
+    50% {left: -100%;}
+    65% {left: -100%;}
+    75% {left: 100%;}
+    90% {left: 100%;}
+    100% {left: -100%;}
+}
+
+@keyframes slider {
+    0% {left: 0;}
+    15% {left: 0;}
+    25% {left: -100%;}
+    40% {left: -100%;}
+    50% {left: -200%;}
+    65% {left: -200%;}
+    75% {left: -300%;}
+    90% {left: -300%;}
+    100% {left: -400%;}
+}
+
+@keyframes slider1 {
+    0% {opacity: 1;}
+    15% {opacity: 1;}
+    25% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    65% {opacity: 0;}
+    75% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slider2 {
+    0% {opacity: 0;}
+    15% {opacity: 0;}
+    25% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    65% {opacity: 0;}
+    75% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes slider3 {
+    0% {opacity: 0;}
+    15% {opacity: 0;}
+    25% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes slider4 {
+    0% {opacity: 0;}
+    15% {opacity: 0;}
+    25% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    65% {opacity: 0;}
+    75% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.vi .box3 {
+    overflow: hidden;
+    border-top-right-radius: 150px;
+    width: 570px;
+}
+
+#slider:not(:checked) ~ .box2 .df label:nth-child(2) {display: block;}
+#slider:checked ~ .box2 .df label:nth-child(1) {display: block;}
+
+#slider:checked ~ .box2 .text p,
+#slider:checked ~ .box3 .slider,
+#slider:checked ~ .box3 .cross {
+    animation-play-state: paused;
+}
+
+/* 섹션1 */ 
+.con1 .block {
+    transition: .5s;
+    height: 400px;   
+    width: 20%;
+    position: relative;
+}
+
+.block .line {
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    background-color: #0086ff;
+}
+
+.con1 .block:nth-child(1) {background-image: url(../A/경북best5/01_대릉원.jpg);}
+.con1 .block:nth-child(2) {background-image: url(../A/경북best5/02_도산서원.jpg);}
+.con1 .block:nth-child(3) {background-image: url(../A/경북best5/03_울릉도.jpg);}
+.con1 .block:nth-child(4) {background-image: url(../A/경북best5/04_하회마을.jpg);}
+.con1 .block:nth-child(5) {background-image: url(../A/경북best5/05_호미곶.jpg);}
+
+.con1 .block:nth-child(1) .line {height: 20%;}
+.con1 .block:nth-child(2) .line {height: 30%;}
+.con1 .block:nth-child(3) .line {height: 40%;}
+.con1 .block:nth-child(4) .line {height: 10%;}
+.con1 .block:nth-child(5) .line {height: 50%;}
+
+.con1 .block:hover .line {
+    height: 100%;
+}
+
+.con1 .block .fff {
+    opacity: 0;
+}
+
+.con1 .block:hover .fff {
+    opacity: 1;
+}
+
+.con1 .col-12:has(.block:hover) .block {
+    width: 18%;
+}
+
+.con1 .block:hover {
+    width: 30% !important;  
+}
+
+#con1-1:checked ~ .con1-1,
+#con1-2:checked ~ .con1-2,
+#con1-3:checked ~ .con1-3,
+#con1-4:checked ~ .con1-4,
+#con1-5:checked ~ .con1-5 {
+    top: 0;
+}
+
+#con1-1:checked ~ .con1-1 .modal-content,
+#con1-2:checked ~ .con1-2 .modal-content,
+#con1-3:checked ~ .con1-3 .modal-content,
+#con1-4:checked ~ .con1-4 .modal-content,
+#con1-5:checked ~ .con1-5 .modal-content {
+    transform: scale(1);
+}
+
+.con1-1 .modal-content,
+.con1-2 .modal-content,
+.con1-3 .modal-content,
+.con1-4 .modal-content,
+.con1-5 .modal-content {
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    padding: 40px;
+}   
+
+.con1-1 .modal-content {background-image: url(../A/경북best5/01_대릉원.jpg);}
+.con1-2 .modal-content {background-image: url(../A/경북best5/01_대릉원.jpg);}
+.con1-3 .modal-content {background-image: url(../A/경북best5/01_대릉원.jpg);}
+.con1-4 .modal-content {background-image: url(../A/경북best5/01_대릉원.jpg);}
+.con1-5 .modal-content {background-image: url(../A/경북best5/01_대릉원.jpg);}
+
+.con1-1 .line1, 
+.con1-2 .line1, 
+.con1-3 .line1,
+.con1-4 .line1,
+.con1-5 .line1 {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff6700;
+    opacity: .4;
+}
+
+.con1-1 .line2, 
+.con1-2 .line2, 
+.con1-3 .line2,
+.con1-4 .line2,
+.con1-5 .line2 {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.4);
+}
+
+.modal {
+    background-color: rgba(0,0,0,.4);
+}
+
+.modal .poa {
+    bottom: 40px;
+    right: 40px;
+}
+
+label.button2 {
+    text-align: center;
+    padding-top: 7px;
+}
+
+/* 섹션2 */
+.con2 .box {
+    position: relative;
+    height: 600px;
+}
+
+.con2 .box1 {
+    width: 1000px;
+}
+
+.con2 .box2 {
+    border-top-right-radius: 100px;
+    width: 320px;
+    background-color: #0086ff;
+}
+
+.con2 .dg:nth-child(1) {
+    top: -200px;
+}
+
+.con2 .line {
+    height: 50px;
+    position: absolute;  
+    background-color: #00a4ff;
+}
+
+.con2 .dg {
+    width: 100%;
+    height: 200px;
+}
+
+.dg {
+    display: grid;
+}
+
+.con2 .dg:nth-child(2) {
+    grid-template-columns: 200px 300px 270px 230px;
+}
+
+.con2 .dg:nth-child(3) {
+    grid-template-columns: 350px 280px 370px;
+}
+
+.con2 .dg:nth-child(4) {
+    grid-template-columns: 250px 320px 430px;
+}
+
+.con2 .block.poa:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    left: -200px;
+}
+
+.con2 .block.poa:last-child {
+    right: -200px;
+    width: 200px;
+    height: 200px;
+}
+
+.con2 .block {
+    width: 100%;
+    z-index: 12;
+    overflow: hidden;
+    height: 200px;
+}
+
+.con2 .back {
+    font-weight: bold;
+    font-size: 14px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: translateY(100%);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: #ff670069;
+}
+
+.con2 .img {
+    width: 100%;
+    height: 100%;
+}
+
+.con2 .img1 {background-image: url(../A/경북투어가이드/가야산만물상설경_성주.jpg);}
+.con2 .img2 {background-image: url(../A/경북투어가이드/가을양동마을_경주.jpg);}
+.con2 .img3 {background-image: url(../A/경북투어가이드/감물염색_청도.jpg);}
+.con2 .img4 {background-image: url(../A/경북투어가이드/감은사지_경주.jpg);}
+.con2 .img5 {background-image: url(../A/경북투어가이드/경정해변_영덕.jpg);}
+.con2 .img6 {background-image: url(../A/경북투어가이드/고추따는날.jpg);}
+.con2 .img7 {background-image: url(../A/경북투어가이드/두들마을일몰_영양.jpg);}
+.con2 .img8 {background-image: url(../A/경북투어가이드/맥문동\ 소나무\ 숲길.jpg);}
+.con2 .img9 {background-image: url(../A/경북투어가이드/병산서원_안동.jpg);}
+.con2 .img10 {background-image: url(../A/경북투어가이드/보문산의벚꽃엔딩야경.jpg);}
+
+.con2 .dg:hover .block:hover .back {
+    transform: translate(0);
+    visibility: visible;
+}
+
+.con2 .dg:hover ~ .dg .block .back {
+    transform: translateY(-100%);
+}
+
+.con2 .dg:hover .block:hover ~ .block .back {
+    transform: translateX(-100%);
+}
+
+.con2 .dg:hover .block .back {
+    transform: translateX(100%);
+}
+
+/* 섹션3 */
+.con3 .box {
+    position: relative;
+}
+
+.con3 .box1 {
+    height: 550px;
+    width: 500px;
+    background-color: #0086ff;
+}
+
+.con3 .line {
+    width: 50px;
+    background-color: #00a4ff;
+}
+
+.con3 .box1 p {
+    width: 45%;
+    color: #fff;
+}
+
+.con3 .box1 p.tit {
+    height: 30px;
+}
+
+.con3 .text-line {
+    height: 375px;
+    width: 1px;
+    left: 40%;
+    top: 21%;
+    background-color: #00a4ff;
+}
+
+.con3 .box2 {
+    width: 800px;   
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(255,255,255,.3));
+}
+
+.con3 .dg {
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.con3 .dg:nth-child(1) {
+    height: 50px;
+}
+
+.con3 .dg:nth-child(1) p {
+    text-align: center;
+}
+
+.con3 .dg:nth-child(2) {
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.con3 .dg:nth-child(2) .date {
+    height: 120px;
+}
+
+.con3 .date-line {
+    width: 100%;
+    height: 2px;
+    background-color: #4f4f4f;
+}
+
+.con3 .date p:nth-child(2) {
+    padding: 7.5px;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.date p {
+    padding-left: 7.5px;
+}
+
+.con3 .date:hover {
+    background-color: #fff;
+}
+
+.event .date-line {
+    background-color: #ff6700;
+}
+
+.event p {
+    color: #ff6700;
+}
+
+.con3 .img1 {background-image: url(../A/이달의공연전시/01.jpg);}
+.con3 .img2 {background-image: url(../A/이달의공연전시/02.jpg);}
+
+.con3 .img {position: relative;}
+.con3 .img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff66007c;
+}
+
+.img .date-line {
+    z-index: 10;
+    position: relative;
+    background-color: #fff;
+}
+
+.img p {
+    z-index: 10;
+    position: relative;
+    color: #fff;
+}
+
+/* 섹션4 */
+.con4 .box {
+    width: 440px;
+    height: 440px;
+}
+
+.con4 .box1  {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 40px;
+}
+
+.con4 .view {
+    border-top-left-radius: 70px;
+    background-color: #0086ff;
+}
+
+.con4 .box2 {
+    margin-left: 300px;
+    border-radius: 50px;
+    background-color: #e4e4e4;
+    border: 5px solid #8a8a8a;
+}
+
+.con4 .box1 i {
+    font-size: 50px;
+    margin-left: 80px;
+    color: #fff;
+}
+
+.cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: relative;
+}
+
+.cube > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cube:nth-child(2) .front {background-image: url(../A/갤러리/01_스페이스워크/01_스페이스워크.jpg);}
+.cube:nth-child(2) .right {background-image: url(../A/갤러리/01_스페이스워크/02_스페이스워크.jpg);}
+.cube:nth-child(2) .back {background-image: url(../A/갤러리/01_스페이스워크/03_스페이스워크.jpg);}
+
+.cube:nth-child(3) .front {background-image: url(../A/갤러리/02_은어다리/01_은어다리.jpg);}
+.cube:nth-child(3) .right {background-image: url(../A/갤러리/02_은어다리/02_은어다리.jpg);}
+.cube:nth-child(3) .back {background-image: url(../A/갤러리/02_은어다리/03_은어다리.jpg);}
+
+.cube:nth-child(4) .front {background-image: url(../A/갤러리/03_연화지/01_연화지.jpg);}
+.cube:nth-child(4) .right {background-image: url(../A/갤러리/03_연화지/02_연화지.jpg);}
+.cube:nth-child(4) .back {background-image: url(../A/갤러리/03_연화지/03_연화지.jpg);}
+
+.cube .front {
+    transform: rotateY(0) translateZ(100px);
+}
+
+.cube .left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: #0086ff;
+}
+
+.cube .right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube:hover {
+    transform: rotateY(-270deg);
+}
+
+.con4 .cube p {
+    font-size: 14px;
+}
+
+.con4 .ball {
+    width: 150px;
+    height: 150px;
+    top: 32%;
+    left: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    border: 5px solid #8a8a8a;
+}
+
+.con4 .ball i {
+    color: #8a8a8a;
+    margin: 0 auto;
+    position: relative;
+    transform: scale(0);
+    /* transform: scale(5); */
+}
+
+.con4 .box2 .img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.con4 .box2 .img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background-color: #8a8a8a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ball:checked ~ .box2 .img::after {
+    opacity: 0;
+}
+
+.con4 .box2 .img1 {
+    left: 170px;
+    top: 170px;
+    transition-delay: .1s;
+}
+
+.con4 .box2 .img2 {
+    left: 200px;
+    top: 170px;
+    transition-delay: .2s;
+}
+
+.con4 .box2 .img3 {
+    left: 230px;
+    top: 170px;
+    transition-delay: .3s;
+}
+
+.con4 .box2 .img4 {
+    left: 170px;
+    top: 200px;
+    transition-delay: .4s;
+}
+
+.con4 .box2 .img5 {
+    left: 200px;
+    top: 200px;
+    transition-delay: .5s;
+}
+
+.con4 .box2 .img6 {
+    left: 230px;
+    top: 200px;
+    transition-delay: .6s;
+}
+
+.con4 .box2 .img7 {
+    left: 170px;
+    top: 230px;
+    transition-delay: .7s;
+}
+
+.con4 .box2 .img8 {
+    left: 200px;
+    top: 230px;
+    transition-delay: .8s;
+}
+
+.con4 .box2 .img9 {
+    left: 230px;
+    top: 230px;
+    transition-delay: .9s;
+}
+
+.con4 .box2 .img9 {
+    left: 230px;
+    top: 230px;
+}
+
+.con4 .img1 {background-image: url(../A/갤러리/expend/01.jpg);}
+.con4 .img2 {background-image: url(../A/갤러리/expend/02.jpg);}
+.con4 .img3 {background-image: url(../A/갤러리/expend/03.jpg);}
+.con4 .img4 {background-image: url(../A/갤러리/expend/04.jpg);}
+.con4 .img5 {background-image: url(../A/갤러리/expend/05.jpg);}
+.con4 .img6 {background-image: url(../A/갤러리/expend/06.jpg);}
+.con4 .img7 {background-image: url(../A/갤러리/expend/07.jpg);}
+.con4 .img8 {background-image: url(../A/갤러리/expend/08.jpg);}
+.con4 .img9 {background-image: url(../A/갤러리/expend/09.jpg);}
+
+#ball:checked ~ .box2 .ball i {
+    transform: scale(5) rotate(360deg);
+}
+
+#ball:checked ~ .box2 .ball {
+    left: -230px;
+}
+
+#ball:checked ~ .box2 .img {
+    width: 120px;
+    height: 120px;
+}
+ 
+#ball:checked ~ .box2 .img1 {
+    top: 20px;
+    left: 20px;
+}
+
+#ball:checked ~ .box2 .img2 {
+    top: 20px;
+    left: 155px;
+}
+
+#ball:checked ~ .box2 .img3 {
+    top: 20px;
+    left: 290px;
+}
+ 
+#ball:checked ~ .box2 .img4 {
+    top: 155px;
+    left: 20px;
+}
+
+#ball:checked ~ .box2 .img5 {
+    top: 155px;
+    left: 155px;
+}
+
+#ball:checked ~ .box2 .img6 {
+    top: 155px;
+    left: 290px;
+}
+ 
+#ball:checked ~ .box2 .img7 {
+    top: 290px;
+    left: 20px;
+}
+
+#ball:checked ~ .box2 .img8 {
+    top: 290px;
+    left: 155px;
+}
+
+#ball:checked ~ .box2 .img9 {
+    top: 290px;
+    left: 290px;
+}
+
+/* 섹션5 */
+
+.con5 .col-12:nth-child(2) {
+    overflow: hidden;
+    height: 400px;
+}
+
+.con5 .trans::-webkit-scrollbar {
+    display: none;
+}
+
+.con5 .trans {
+    width: 400px;
+    height: 1320px;
+    overflow-y: scroll;
+    transform: rotate(-90deg) translateX(460px) translateY(460px);
+}
+
+.con5 .block {
+    width: 315px;
+    height: 264px;
+    transform: rotate(90deg) translateY(-50px);
+}
+
+.con5 .trans .img {
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 220px;
+    height: 305px;
+    overflow: hidden;
+    position: relative;
+}
+
+.con5 .trans .tri1 {
+    left: 30%;
+    transition: .5s;
+    background-color: #0068ff69;
+}
+
+.con5 .trans .tri4:nth-child(2) {
+    left: 30%;
+    transition: .3s;
+    background-color: #0068ff69;
+}
+
+.con5 .trans .img:hover .tri {
+    left: 10%;
+}
+
+.con5 .trans .img:hover .tri4:nth-child(3) {
+    left: 30%;
+}
+
+.con5 .trans .img {
+    animation-name: view;
+    animation-timeline: view(y);
+    animation-delay: 10s;
+}
+
+@keyframes view {
+    0% {transform: scale(.8);}
+    25% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1);}
+    100% {transform: scale(.8);}
+}
+
+.con5 .trans .tri4:nth-child(3) {
+    left: 50%;
+    transition: .7s;
+    background-color: #0068ff69;
+}
+
+.con5 .img1 {background-image: url(../A/문화축제/축제1.jpg);}
+.con5 .img2 {background-image: url(../A/문화축제/축제2.jpg);}
+.con5 .img3 {background-image: url(../A/문화축제/축제3.jpg);}
+.con5 .img4 {background-image: url(../A/문화축제/축제4.jpg);}
+.con5 .img5 {background-image: url(../A/문화축제/축제5.jpg);}
+.con5 .img6 {background-image: url(../A/문화축제/축제6.jpg);}
+.con5 .img7 {background-image: url(../A/문화축제/축제7.jpg);}
+.con5 .img8 {background-image: url(../A/문화축제/축제8.jpg);}
+.con5 .img9 {background-image: url(../A/문화축제/축제9.jpg);}
+.con5 .img10 {background-image: url(../A/문화축제/축제10.jpg);}
+
+/* 푸터 */
+footer {
+    height: 245px;
+    background-color: #0086ff;
+}
+
+footer .line {
+    height: 50px;
+    background-color: #00a4ff;
+}
+
+/* 미니비주얼 */
+.mini {
+    width: 100%;
+    height: 170px;
+    background-image: url(../images/image\ \(1\).jpg);
+    animation: 30s mini infinite;
+}
+
+@keyframes mini {
+    0% {background-position: top;}
+    100% {background-position: bottom;}
+}
+
+.mini .poa {
+    position: absolute !important;
+}
+
+.mini .back {
+    background-color: #0086ff69;
+}
+
+.mini .line {
+    height: 12px;
+    background-color: #0086ff;
+}
+
+.sub1 .img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub1 .img1 {background-image: url(../A/tour/산/mountain\ \(1\).jpg);}
+.sub1 .img2 {background-image: url(../A/tour/산/mountain\ \(2\).jpg);}
+.sub1 .img3 {background-image: url(../A/tour/산/mountain\ \(3\).jpg);}
+.sub1 .img4 {background-image: url(../A/tour/산/mountain\ \(4\).jpg);}
+.sub1 .img5 {background-image: url(../A/tour/산/mountain\ \(5\).jpg);}
+.sub1 .img6 {background-image: url(../A/tour/산/mountain\ \(6\).jpg);}
+.sub1 .img7 {background-image: url(../A/tour/산/mountain\ \(7\).jpg);}
+.sub1 .img8 {background-image: url(../A/tour/산/mountain\ \(8\).jpg);}
+.sub1 .img9 {background-image: url(../A/tour/산/mountain\ \(9\).jpg);}
+.sub1 .img10 {background-image: url(../A/tour/산/mountain\ \(10\).jpg);}
+.sub1 .img11 {background-image: url(../A/tour/산/mountain\ \(11\).jpg);}
+.sub1 .img12 {background-image: url(../A/tour/산/mountain\ \(12\).jpg);}
+.sub1 .img13 {background-image: url(../A/tour/산/mountain\ \(13\).jpg);}
+
+.sub1 .img14 {background-image: url(../A/tour/호수/hosu\ \(1\).jpg);}
+.sub1 .img15 {background-image: url(../A/tour/호수/hosu\ \(2\).jpg);}
+.sub1 .img16 {background-image: url(../A/tour/호수/hosu\ \(3\).jpg);}
+.sub1 .img17 {background-image: url(../A/tour/호수/hosu\ \(4\).jpg);}
+.sub1 .img18 {background-image: url(../A/tour/호수/hosu\ \(5\).jpg);}
+.sub1 .img19 {background-image: url(../A/tour/호수/hosu\ \(6\).jpg);}
+.sub1 .img20 {background-image: url(../A/tour/호수/hosu\ \(7\).jpg);}
+.sub1 .img21 {background-image: url(../A/tour/호수/hosu\ \(8\).jpg);}
+.sub1 .img22 {background-image: url(../A/tour/호수/hosu\ \(9\).jpg);}
+.sub1 .img23 {background-image: url(../A/tour/호수/hosu\ \(10\).jpg);}
+.sub1 .img24 {background-image: url(../A/tour/호수/hosu\ \(11\).jpg);}
+
+.sub1 .img25 {background-image: url(../A/tour/바다/sea\ \(1\).jpg);}
+.sub1 .img26 {background-image: url(../A/tour/바다/sea\ \(2\).jpg);}
+.sub1 .img27 {background-image: url(../A/tour/바다/sea\ \(3\).jpg);}
+.sub1 .img28 {background-image: url(../A/tour/바다/sea\ \(4\).jpg);}
+.sub1 .img29 {background-image: url(../A/tour/바다/sea\ \(5\).jpg);}
+.sub1 .img30 {background-image: url(../A/tour/바다/sea\ \(6\).jpg);}
+.sub1 .img31 {background-image: url(../A/tour/바다/sea\ \(7\).jpg);}
+.sub1 .img32 {background-image: url(../A/tour/바다/sea\ \(8\).jpg);}
+.sub1 .img33 {background-image: url(../A/tour/바다/sea\ \(9\).jpg);}
+.sub1 .img34 {background-image: url(../A/tour/바다/sea\ \(10\).jpg);}
+.sub1 .img35 {background-image: url(../A/tour/바다/sea\ \(11\).jpg);}
+
+
+.sub1 .img36 {background-image: url(../A/tour/유네스코/unsc\ \(1\).jpg);}
+.sub1 .img37 {background-image: url(../A/tour/유네스코/unsc\ \(2\).jpg);}
+.sub1 .img38 {background-image: url(../A/tour/유네스코/unsc\ \(3\).jpg);}
+.sub1 .img39 {background-image: url(../A/tour/유네스코/unsc\ \(4\).jpg);}
+.sub1 .img40 {background-image: url(../A/tour/유네스코/unsc\ \(5\).jpg);}
+.sub1 .img41 {background-image: url(../A/tour/유네스코/unsc\ \(6\).jpg);}
+.sub1 .img42 {background-image: url(../A/tour/유네스코/unsc\ \(7\).jpg);}
+.sub1 .img43 {background-image: url(../A/tour/유네스코/unsc\ \(8\).jpg);}
+.sub1 .img44 {background-image: url(../A/tour/유네스코/unsc\ \(9\).jpg);}
+.sub1 .img45 {background-image: url(../A/tour/유네스코/unsc\ \(10\).jpg);}
+
+#sub1-1:checked ~ .col-12 .sub1-1,
+#sub1-2:checked ~ .col-12 .sub1-2,
+#sub1-3:checked ~ .col-12 .sub1-3,
+#sub1-4:checked ~ .col-12 .sub1-4,
+#sub1-5:checked ~ .col-12 .sub1-5 {
+    display: flex;
+}
+
+#sub1-1:checked ~ .col-12 label:nth-child(1),
+#sub1-2:checked ~ .col-12 label:nth-child(2),
+#sub1-3:checked ~ .col-12 label:nth-child(3),
+#sub1-4:checked ~ .col-12 label:nth-child(4),
+#sub1-5:checked ~ .col-12 label:nth-child(5) {
+    background-color: #ff6700;
+}
+
+.sub1 .img::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    transition: .5s;
+    height: 15px;
+    left: 0;
+    background-color: #0086ff;
+}
+
+.sub1 .img:hover::after {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.bar {
+    padding: 40px 10px 0 10px;
+    width: 250px;
+    right: 0;
+    position: fixed;
+    top: 120px;
+    height: 500px;
+    z-index: 100;
+    background-color: #fff;
+    right: -250px;
+    border-bottom-left-radius: 100px;
+}
+
+#bar:checked ~ .bar {
+    right: 0;
+}
+
+.bar a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.bar > div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bar > a:nth-child(2):hover ~ .hover1,
+.bar .hover1:hover {
+    height: 120px;
+}
+
+.bar > a:nth-child(4):hover ~ .hover2,
+.bar .hover2:hover {
+    height: 120px;
+}
+
+.bar > a:nth-child(6):hover ~ .hover3,
+.bar .hover3:hover {
+    height: 160px;
+}
+
+.bar .hover1, .bar .hover2, .bar .hover3 {
+    height: 0;
+    overflow: hidden;
+}
+
+footer .fab:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/*  */
+
+.sub2-2 .keywords {
+    height: 575px;
+    overflow-y: scroll;
+}
+
+.table {
+    border-top-left-radius: 35px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #0086ff;
+}
+
+thead td {
+    color: #fff !important;
+}
+
+.table td {
+    text-align: center;
+    background-color: transparent;
+}
+
+table input {
+    margin: 0 auto;
+    width: 20px;
+    display: block !important;
+    height: 20px;
+}
+
+.keywords {
+    padding: 0;
+}
+
+.col-6 > .table {
+    width: 645px;
+}
+
+.sub2-2 .table td:nth-child(1) {
+    width: 132px;
+}
+
+.sub2-2 .table td:nth-child(2) {
+    width: 40%;
+}
+
+.sub2-2 .table td:nth-child(3) {
+    width: 40%;
+}
+
+td {
+    font-size: 16px;
+}
+
+.sub2-2 .block {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #0086ff;
+}
+
+.sub2-2 .block p {
+    height: 20px;
+}
+
+.sub2-2 .col-10 {
+    border-bottom: 2px solid #0086ff;
+}
+
+.sub2-3 .y {
+    width: 100px;
+}
+
+.sub2-3 .chart {
+    width: 1200px;
+    align-items: end;
+    height: 500px;
+    border-bottom: 5px solid #0086ff;
+    border-left: 5px solid #0086ff;
+}
+
+.x {
+    padding-top: 15px;
+    height: 50px;
+    padding-left: 100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.chart > div {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 0;
+    width: 70px;
+}
+
+.pos p {
+    width: 70px;
+    text-align: center;
+}
+
+.y p {
+    color: #0086ff;
+}
+
+.hover {
+    position: absolute;
+    width: 70px;
+    opacity: 0;
+    height: 30px;
+    padding-top: 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    top: -40px;
+    background-color: #0086ff;
+}
+
+.chart > div:hover .hover {
+    opacity: 1;
+}
+
+.list {
+    height: 120px;
+    border-radius: 40px;
+}
+
+.sub2-1 .box1, .sub2-1 .box3 {
+    width: 19%;
+    border-radius: 30px;
+    height: 600px;
+} 
+
+.sub2-1 .box2 {
+    border-radius: 30px;
+    width: 765px;
+    height: 600px;
+} 
+
+.list {
+    height: 130px;
+    padding: 15px;
+}
+
+.sub2-1 .list > * {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: 400px 300px;
+}
+
+.sub2-1 .tit:nth-child(1) {
+    color: #0086ff;
+}
+
+.sub2-1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sub2-1 .view {
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 900px;
+}
+
+.view-box {
+    transition: none;
+    transform-style: preserve-3d;
+    width: 2000px;
+    height: 2000px;
+}
+
+.sub2-1 .view-box > div {
+    width: 100%;    
+    height: 100%;    
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.sub2-1 .top {
+    background-position: -2000px 0;
+    transform: rotateX(-90deg) translateZ(-995px);
+}
+
+.sub2-1 .bottom {
+    background-position: -2000px -4000px;
+    transform: rotateX(90deg) translateZ(-995px);
+}
+
+.sub2-1 .left {
+    background-position: 0 -2000px;
+    transform: rotateY(90deg) translateZ(-995px);
+}
+
+.sub2-1 .front {
+    background-position: -2000px -2000px;
+    transform: translateZ(-995px);
+}
+
+.sub2-1 .right {
+    background-position: -4000px -2000px;
+    transform: rotateY(-90deg) translateZ(-995px);
+}
+
+.sub2-1 .back {
+    background-position: -6000px -2000px;
+    transform: rotateY(-180deg) translateZ(-995px);
+}
+
+.pin {
+    transition: none;
+    display: flex;
+    height: 1px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bind {
+    bottom: 70px;
+    background-color: #0086ff69;
+    border-radius: 20px;
+    height: 50px;
+    opacity: 0;
+    top: -120px;
+    width: 100px;
+}
+
+.animation:hover {
+    text-decoration: underline;
+}
+
+img:hover ~ .bind {
+    opacity: 1;
+}
+
+.bind p {
+    color: #fff;
+    text-align: center;
+}
+
+.pin {
+    width: 1px;
+    height: 1px;
+}
+
+.prev, .next {
+    transition: none;
+}
