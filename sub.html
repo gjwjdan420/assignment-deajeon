@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./resources/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="login" id="login">
+    <input type="checkbox" name="join" id="join">
+    <input type="checkbox" name="bar" id="bar">
+    <header class="w-100 pof t l shadow pt-4">
+        <div class="container por">
+            <div class="row">
+                <div class="col-2">
+                    <a href="./index.html" class="logo img logo-header"></a>
+                </div>
+                <div class="col-5 ps-5 df ja pt-3 px-0">
+                    <a href="./sub.html">투어경북</a>
+                    <a href="#">숙박</a>
+                    <a href="#">문화유산</a>
+                    <a href="#">체험예약/안내</a>
+                    <div class="hover1 poa shadow">
+                        <a href="#">호텔</a>
+                        <a href="#">펜션</a>
+                        <a href="#">게스트하우스</a>
+                    </div>
+                    <div class="hover2 poa shadow">
+                        <a href="#">세계문화유산</a>
+                        <a href="#">경주의역사</a>
+                        <a href="#">분류별유산</a>
+                    </div>
+                    <div class="hover3 poa shadow">
+                        <a href="#">체험예약</a>
+                        <a href="./sub2.html">관광안내</a>
+                        <a href="#">주변관광지</a>
+                        <a href="#">문화재투어</a>
+                    </div>
+                </div>
+                <div class="col-5 df jb pt-3">
+                    <div class="df mx-5">
+                        <input type="text" id="seach" name="seach" style="width: 150px;">
+                        <i class="fas fa-magnifying-glass tit mt-2"></i>
+                    </div>
+                    <label for="login" class="ms-4">로그인</label>
+                    <label for="join" class="mx-3">회원가입</label>
+                    <label for="bar" class="fas fa-bars tit mt-1 dn"></label>
+                    <label for="bar" class="fas fa-x tit mt-1 dn"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bar shadow">
+        <a href="./sub.html">투어경북</a>
+        <a href="#" class="mt-4">숙박</a>
+        <div class="hover1">
+            <a href="#">호텔</a>
+            <a href="#">펜션</a>
+            <a href="#">게스트하우스</a>
+        </div>
+        <a href="#" class="mt-4">문화유산</a>
+        <div class="hover2">
+            <a href="#">세계문화유산</a>
+            <a href="#">경주의역사</a>
+            <a href="#">분류별유산</a>
+        </div>
+        <a href="#" class="mt-4">체험예약/안내</a>
+        <div class="hover3">
+            <a href="#">체험예약</a>
+            <a href="./sub2.html">관광안내</a>
+            <a href="#">주변관광지</a>
+            <a href="#">문화재투어</a>
+        </div>
+    </div>
+    <div class="modal login-modal">
+        <div class="modal-content">
+            <p class="tit">로그인</p>
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="login-password" id="login-password">
+            <div class="poa">
+                <label for="login" class="button2 btn2 mx-3">종료</label>
+                <label for="login" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal join-modal">
+        <div class="modal-content">
+            <p class="tit">회원가입</p>
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-name" id="join-name">
+            <p class="mt-4">아이디</p>
+            <input type="text" name="login-id" id="login-id">
+            <p class="mt-4">비밀번호</p>
+            <input type="text" name="join-password" id="join-password">
+            <p class="mt-4">성명</p>
+            <input type="text" name="join-names" id="join-names">
+            <p class="mt-4">전화번호</p>
+            <input type="text" name="join-number" id="join-number">
+            <div class="poa">
+                <label for="join" class="button2 btn2 mx-3">종료</label>
+                <label for="join" class="button2 btn2">확인</label>
+            </div>
+        </div>
+    </div>
+    <section class="vi">
+        <div class="container">
+            <div class="row">
+                <div class="mini img por">
+                    <p class="poa tit" style="bottom: 10px; left: 20px;">투어경북</p>
+                    <div class="line w-100 b l"></div>
+                    <div class="back w-100 h-100 t l"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0">TOUR</h1>
+                    <h2>투어경북</h2>
+                </div>
+                <input type="radio" name="sub1" id="sub1-1" checked>
+                <input type="radio" name="sub1" id="sub1-2">
+                <input type="radio" name="sub1" id="sub1-3">
+                <input type="radio" name="sub1" id="sub1-4">
+                <input type="radio" name="sub1" id="sub1-5">
+                <div class="col-12 mt-5">
+                    <label for="sub1-1" class="button2 btn2">전체</label>
+                    <label for="sub1-2" class="button2 btn2 mx-2">산</label>
+                    <label for="sub1-3" class="button2 btn2 mx-2">호수</label>
+                    <label for="sub1-4" class="button2 btn2 mx-2">바다</label>
+                    <label for="sub1-5" class="button2 btn2">문화유산</label>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="sub1-1 w-100 df jb dn flex-wrap">
+                        <p class="w-100 tit">전체 : 전국에서 가장 많은 국가지정문화재를 보유한 문화관광의 도시 </p>
+                        <div class="img img1"></div>
+                        <div class="img img2"></div>
+                        <div class="img img3"></div>
+                        <div class="img img4"></div>
+                        <div class="img img5"></div>
+                        <div class="img img6"></div>
+                        <div class="img img7"></div>
+                        <div class="img img8"></div>
+                        <div class="img img9"></div>
+                        <div class="img img10"></div>
+                        <div class="img img11"></div>
+                        <div class="img img12"></div>
+                        <div class="img img13"></div>
+                        <div class="img img14"></div>
+                        <div class="img img15"></div>
+                        <div class="img img16"></div>
+                        <div class="img img17"></div>
+                        <div class="img img18"></div>
+                        <div class="img img19"></div>
+                        <div class="img img20"></div>
+                        <div class="img img21"></div>
+                        <div class="img img22"></div>
+                        <div class="img img23"></div>
+                        <div class="img img24"></div>
+                        <div class="img img25"></div>
+                        <div class="img img26"></div>
+                        <div class="img img27"></div>
+                        <div class="img img28"></div>
+                        <div class="img img29"></div>
+                        <div class="img img30"></div>
+                        <div class="img img31"></div>
+                        <div class="img img32"></div>
+                        <div class="img img33"></div>
+                        <div class="img img34"></div>
+                        <div class="img img35"></div>
+                        <div class="img img36"></div>
+                        <div class="img img37"></div>
+                        <div class="img img38"></div>
+                        <div class="img img39"></div>
+                        <div class="img img40"></div>
+                        <div class="img img41"></div>
+                        <div class="img img42"></div>
+                        <div class="img img43"></div>
+                        <div class="img img44"></div>
+                        <div class="img img45"></div>
+                    </div>
+                    <div class="sub1-2 w-100 df jb dn flex-wrap">
+                        <p class="w-100 tit">
+                            산 : 태백산맥을 품고 생명이 싹트는 절대 비경의 산
+                        </p>
+                        <div class="img img1"></div>
+                        <div class="img img2"></div>
+                        <div class="img img3"></div>
+                        <div class="img img4"></div>
+                        <div class="img img5"></div>
+                        <div class="img img6"></div>
+                        <div class="img img7"></div>
+                        <div class="img img8"></div>
+                        <div class="img img9"></div>
+                        <div class="img img10"></div>
+                        <div class="img img11"></div>
+                        <div class="img img12"></div>
+                        <div class="img img13"></div>
+                    </div>
+                    <div class="sub1-3 w-100 df jb dn flex-wrap">
+                        <p class="tit w-100">
+                            호수 : 가족과 함께,  연인과 함께 산책하기 좋은 경북의 호수
+                        </p>
+                        <div class="img img14"></div>
+                        <div class="img img15"></div>
+                        <div class="img img16"></div>
+                        <div class="img img17"></div>
+                        <div class="img img18"></div>
+                        <div class="img img19"></div>
+                        <div class="img img20"></div>
+                        <div class="img img21"></div>
+                        <div class="img img22"></div>
+                        <div class="img img23"></div>
+                        <div class="img img24"></div>
+                    </div>
+                    <div class="sub1-4 w-100 df jb dn flex-wrap">
+                        <p class="w-100 tit">
+                            바다 : 출렁이는 파도와 눈부신 일출, 계절이 변해도 영원한 동해바다
+                        </p>
+                        <div class="img img25"></div>
+                        <div class="img img26"></div>
+                        <div class="img img27"></div>
+                        <div class="img img28"></div>
+                        <div class="img img29"></div>
+                        <div class="img img30"></div>
+                        <div class="img img31"></div>
+                        <div class="img img32"></div>
+                        <div class="img img33"></div>
+                        <div class="img img34"></div>
+                        <div class="img img35"></div>
+                    </div>
+                    <div class="sub1-5 w-100 df jb dn flex-wrap">
+                        <p class="w-100 tit">
+                            세계유산 : 유네스코가 인정한 한반도의 문화유산을 품다
+                        </p>
+                        <div class="img img36"></div>
+                        <div class="img img37"></div>
+                        <div class="img img38"></div>
+                        <div class="img img39"></div>
+                        <div class="img img40"></div>
+                        <div class="img img41"></div>
+                        <div class="img img42"></div>
+                        <div class="img img43"></div>
+                        <div class="img img44"></div>
+                        <div class="img img45"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 por">
+        <div class="line w-100 t l"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <a href="#" class="fab fa-facebook fff tit"></a>
+                    <a href="#" class="fab fa-youtube fff mx-3 tit"></a>
+                    <a href="#" class="fab fa-twitter fff tit"></a>
+                </div>
+                <div class="col-6 pt-5">
+                    <a href="./index.html" class="logo logo-footer img mt-2"></a>
+                    <p class="fff mt-2">Copyright ⓒ 2020 Gyeongsangbuk-do all rights reserved.</p>
+                </div>
+                <div class="col-6 pt-5">
+                    <p class="mt-2 fff text-end">
+                        경상북도 안동시 풍천면 도청대로 455 관광문의(경상북도관광홍보관) : 054-745-0753 <br>
+                        e-mail : gbnadri@gmail.com 홈페이지문의(경상북도관광공사) : 070-4820-6437 <br>
+                        관광자료신청 : 054-678-5430 <br>
+                        경북투어문의 : 054-678-5432
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
